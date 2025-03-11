@@ -6,6 +6,7 @@
         <title>Sayt.az</title>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./output.css" />
         <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
         <style>
@@ -40,31 +41,90 @@
             }
         }
 
-            .swiper {
-        width: 100%;
-        height: 100%;
+
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 50px 20px;
+            background: #fff;
         }
 
-        .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        }
 
         .swiper {
-        margin-left: auto;
-        margin-right: auto;
+            width: 60%;
+            max-width: 800px;
+            position: relative;
         }
+
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4a2182;
+        }
+
+
+        .description {
+            font-size: 16px;
+            color: #64748b;
+            margin: 10px 0 20px;
+        }
+
+
+        .customer-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        .customer-info img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+
+        .name {
+            font-size: 18px;
+            color: #334155;
+            font-weight: bold;
+        }
+
+        .role {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #4a2182;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .swiper-pagination-bullet {
+            background: #64748b;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #4a2182;
+        }
+
+
 
         </style>
     </head>
@@ -671,9 +731,71 @@
                 </div>                               
 
             </section>
+
+            <section>
+
+                <div class="testimonial-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="title">Müştərilərdən müsbət rəy</p>
+                                    <p class="description">Veb saytımı hazırlamaq üçün Sayt.az-ı seçmək biznesim üçün verdiyim ən yaxşı qərar idi.</p>
+                                    <div class="customer-info">
+                                        <img src="https://api.websiteca.com/storage/WAUSkNOdjK5fUxWQs2x7jOeOr4f0WZIgumqqhb31.png" alt="human">
+                                        <div>
+                                            <p class="name">Hikmat Taghiyev</p>
+                                            <p class="role">Accountant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+   
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="title">Müştərilərdən müsbət rəy</p>
+                                    <p class="description">Sayt.az komandası tərəfindən hazırlanan ev alqı-satqısı saytı, gözləntilərimi tamamilə doğrultdu.</p>
+                                    <div class="customer-info">
+                                        <img src="https://api.websiteca.com/storage/t6bTFdGMt22ImMHtBk82gD3DTDg0cQ9jMUuljIEW.png" alt="human">
+                                        <div>
+                                            <p class="name">Bahman Ahmadli</p>
+                                            <p class="role">CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <p class="title">Müştərilərdən müsbət rəy</p>
+                                    <p class="description">Sayt.az saytımın hazırlanmasında gözləntilərimi aşdı.</p>
+                                    <div class="customer-info">
+                                        <img src="https://api.websiteca.com/storage/kBaPiZJ8SftpeTvCglQ9wTUC7BunjjhvfPKv3e2P.png" alt="human">
+                                        <div>
+                                            <p class="name">Seljan Novruz</p>
+                                            <p class="role">CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                
+                
+
+            </section>
             
             
-            <section class="w-full mx-auto bg-gray-100 py-10">
+            <section class="w-full mx-auto bg-white py-10">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-2xl md:text-3xl font-bold text-[#300B60] text-center">Bloqumuza daxil olun</h2>
                     <p class="text-[#4A2182] text-center mt-2 text-lg">Vebin İnkişafı, Dizaynı və Onlayn Strategiyaları ilə bağlı maraqlı məqalələri kəşf edin</p>
@@ -725,10 +847,74 @@
                   </div>
               
               </section>
-              
-            
         </main>
 
+        <footer class="bg-purple-50 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row py-14 px-6 items-start max-w-screen-xl mx-auto gap-12">
+                <div class="md:flex-1">
+                    <a href="index.htm"><img src="img/saytaz.svg" class="w-48 h-14" alt="Sayt.az Logo"></a>
+                    <p class="max-w-md text-purple-900 mt-6 mb-8 text-sm leading-relaxed">
+                        Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif edir.
+                    </p>
+                    <h3 class="mb-5 font-semibold text-purple-900 text-lg">Bizi izləyin :</h3>
+                    <div class="flex items-center gap-5">
+                        <a href="#" class="group">
+                            <i class="fa-brands fa-facebook text-3xl text-purple-400 group-hover:text-purple-700 transition-all"></i>
+                        </a>
+                        <a href="#" class="group">
+                            <i class="fa-brands fa-instagram text-3xl text-purple-400 group-hover:text-purple-700 transition-all"></i>
+                        </a>
+                        <a href="#" class="group">
+                            <i class="fa-brands fa-whatsapp text-3xl text-purple-400 group-hover:text-purple-700 transition-all"></i>
+                        </a>
+                        <a href="#" class="group">
+                            <i class="fa-brands fa-linkedin-in text-3xl text-purple-400 group-hover:text-purple-700 transition-all"></i>
+                        </a>
+                        <a href="#" class="group">
+                            <i class="fa-brands fa-youtube text-3xl text-purple-400 group-hover:text-purple-700 transition-all"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="flex md:flex-1 md:flex-row flex-col gap-8 items-start">
+                    <div>
+                        <h3 class="text-purple-900 mb-6 font-semibold text-lg uppercase">Hostİnq &amp; Domen</h3>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Domen</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Veb Hostinq</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">VPS Hostinq</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Server</a></div>
+                    </div>
+                    <div>
+                        <h3 class="text-purple-900 mb-6 font-semibold text-lg uppercase">Şirkət</h3>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Haqqımızda</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Əlaqə</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Bloq</a></div>
+                        <div class="mb-4 text-purple-800 text-sm hover:text-purple-600 transition"><a href="#">Portfolio</a></div>
+                    </div>
+                </div>
+            </div>
+        
+            <hr class="border-gray-300">
+        
+            <div class="max-w-screen-xl flex flex-col md:flex-row justify-between items-center mx-auto py-5 px-6">
+                <p class="text-sm text-purple-800 text-center font-bold md:text-left mt-4 md:mt-0">
+                    © 2004-2025 Sayt.az. Bütün Hüquqlar Qorunur.
+                </p>
+                <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                    <a href="tel:+994703300004" class="text-purple-900 flex items-center gap-2">
+                        <span class="text-sm font-bold">+(99470) 330-00-04</span>
+                        <a href="mailto:support@sayt.az" class="text-purple-900 flex items-center gap-2">
+                            <span class="text-sm font-bold">support@sayt.az</span>
+                        </a>
+                    </a>
+                    <span class="hidden md:block h-5 w-px bg-gray-300"></span>
+                </div>
+            </div>
+        </footer>
+        
+          
+          
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
