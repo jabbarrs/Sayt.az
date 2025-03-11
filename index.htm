@@ -788,6 +788,266 @@
 
             </section>
 
+            <section class="w-full mb-10 mt-4 bg-[#f5f5f5]">
+                <div class="flex container mx-auto flex-col md:flex-row md:gap-6 gap-2 pb-12 mt-2 px-2 py-6 relative">
+                    <div class="md:w-2/3 w-full bg-white p-4">
+                        <h1 class="text-5xl max-md:text-4xl max-sm:text-lg font-bold mt-4 mb-12">Qiymət Təklifi Al</h1>
+                        <div class="mb-10">
+                            <h3 class="text-[#212529] text-lg font-medium">Statik səhifələr</h3>
+                            <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                                <div class="mt-4 py-2 px-4">
+                                    <p class="mb-4">Neçə statik səhifə olacaq?</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="bg-[#a271f2] text-white flex w-8 h-8 text-base items-center justify-center rounded-md">1</span>
+                                        <input id="input1" oninput="change1()" min="1" max="20" type="range" value="4" class="w-10/12 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-mainLightPurple">
+                                        <span class="bg-[#a271f2] text-white flex w-8 h-8 text-base items-center justify-center rounded-md">20</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 py-2 px-4 flex md:flex-row flex-col md:justify-between md:items-center gap-x-2">
+                                    <p>Dizayn mürəkkəblik</p>
+                                    <div class="flex flex-col rounded-md p-3 justify-center gap-4 md:w-4/6 w-full mt-4">
+                                        <div class="flex justify-between items-center text-xs md:text-base pr-4">
+                                            <span>Sadə</span>
+                                            <span>Orta</span>
+                                            <span>Xüsusi</span>
+                                        </div>
+                                        <input id="input2" oninput="change1()" min="1" max="3" step="1" type="range" value="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]">
+                                    <p class="text-[#285a70]">Xərc</p>
+                                    <p id="pages" class="text-[#a271f2] sm:text-[22px] font-semibold">7 səhifə / 700 ₼ </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-3/3 w-full">
+                            <h3 class="text-[#212529] text-lg font-medium mt-3">Veb sayt əlavələri</h3>
+                            <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                                <div id="calc" class="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4 py-2 px-4">
+                                
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Bloq</span>
+                                <input onclick="changePrice(this, 200)" type="checkbox" id="1">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Üzv girişi /&zwj;&zwj;&zwj; Profillər</span>
+                                <input onclick="changePrice(this, 400)" type="checkbox" id="2">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Responsive</span>
+                                <input onclick="changePrice(this, 100)" type="checkbox" id="8">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Forum</span>
+                                <input onclick="changePrice(this, 400)" type="checkbox" id="22">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Mesajlaşma</span>
+                                <input onclick="changePrice(this, 50)" type="checkbox" id="23">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Canlı Söhbət</span>
+                                <input onclick="changePrice(this, 50)" type="checkbox" id="24">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Qalereya</span>
+                                <input onclick="changePrice(this, 100)" type="checkbox" id="25">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Əlaqə Forması</span>
+                                <input onclick="changePrice(this, 100)" type="checkbox" id="26">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Saytda Axtarış</span>
+                                <input onclick="changePrice(this, 100)" type="checkbox" id="27">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Xəritə Məlumatı / Geolocation</span>
+                                <input onclick="changePrice(this, 100)" type="checkbox" id="28">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Rezervasyon</span>
+                                <input onclick="changePrice(this, 400)" type="checkbox" id="29">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Sosial Media inteqrasiyası</span>
+                                <input onclick="changePrice(this, 50)" type="checkbox" id="30">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Analitika / İzləmə</span>
+                                <input onclick="changePrice(this, 50)" type="checkbox" id="31">
+                            </label>
+            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Admin Panel</span>
+                                <input onclick="changePrice(this, 300)" type="checkbox" id="36">
+                            </label>
+            </div>
+                                <div class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]">
+                                    <p class="text-[#285a70]">Xərc :</p>
+                                    <p id="prices" class="text-[#a271f2] sm:text-[22px] font-semibold">₼ 0</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-10">
+                            <h3 class="text-[#212529] text-lg font-medium mt-3">Axtarış motorunun optimallaşdırılması</h3>
+                            <div class="bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                                <div class="gap-x-6 gap-y-4 py-4 px-4">
+                                    <div id="calcSearch">
+    
+                                    
+                               <div class="flex items-center mr-2 cursor-pointer">
+                                    <input onclick="changePrice2(this, 200)" type="checkbox" id="3">
+                                  <p class="p-2">Başlıqlar &amp; Meta</p>
+                                </div> 
+                            
+                               <div class="flex items-center mr-2 cursor-pointer">
+                                    <input onclick="changePrice2(this, 300)" type="checkbox" id="32">
+                                  <p class="p-2">Açar söz</p>
+                                </div> 
+                            
+                               <div class="flex items-center mr-2 cursor-pointer">
+                                    <input onclick="changePrice2(this, 300)" type="checkbox" id="33">
+                                  <p class="p-2">+20 Qabaqcıl Texnika</p>
+                                </div> 
+                            
+                               <div class="flex items-center mr-2 cursor-pointer">
+                                    <input onclick="changePrice2(this, 100)" type="checkbox" id="34">
+                                  <p class="p-2">Başlıq Teqləri</p>
+                                </div> 
+                            
+                               <div class="flex items-center mr-2 cursor-pointer">
+                                    <input onclick="changePrice2(this, 100)" type="checkbox" id="35">
+                                  <p class="p-2">Sitemap</p>
+                                </div> 
+                            </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                                    <p class="text-[#285a70]">Xərc :</p>
+                                    <p id="prices2" class="text-[#a271f2] sm:text-[22px] font-semibold">₼ 0</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="md:w-3/3 w-full">
+                            <h3 class="text-[#212529] text-lg font-medium mt-3">Elektron ticarət əlavələri</h3>
+                            <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                                <div id="calcelect" class="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4 py-2 px-4">
+                                
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Ödəniş</span>
+                                <input onclick="changePrice3(this, 200)" type="checkbox" id="38"> 
+                            </label> 
+                            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Səbət</span>
+                                <input onclick="changePrice3(this, 500)" type="checkbox" id="39"> 
+                            </label> 
+                            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Məhsullar</span>
+                                <input onclick="changePrice3(this, 300)" type="checkbox" id="40"> 
+                            </label> 
+                            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Bəyəndiklərim</span>
+                                <input onclick="changePrice3(this, 300)" type="checkbox" id="41"> 
+                            </label> 
+                            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Filtr</span>
+                                <input onclick="changePrice3(this, 300)" type="checkbox" id="42"> 
+                            </label> 
+                            
+                            <label class="relative flex cursor-pointer justify-between items-center">
+                                <span class="text-sm font-medium text-gray-900">Məhsuk Haqqında</span>
+                                <input onclick="changePrice3(this, 200)" type="checkbox" id="43"> 
+                            </label> 
+                            </div>
+                                <div class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]">
+                                    <p class="text-[#285a70]">Xərc :</p>
+                                    <p id="prices3" class="text-[#a271f2] sm:text-[22px] font-semibold">₼ 0</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-10">
+                            <h3 class="text-[#212529] text-lg font-medium mt-3">Logo dizaynı</h3>
+                            <div class="flex flex-col justify-center gap-4 xmd:w-4/6 w-full xmd:mt-0 mt-4">
+                                <div class="flex justify-between items-center text-[16px] xmd:text-base xmd:gap-x-0 gap-x-4 xmd:pr-4 pr-0">
+                                    <span>Ehtiyac yoxdur</span>
+                                    <span>Sadə</span>
+                                    <span>Xüsusi</span>
+                                </div>
+                                <div>
+                                    <input id="input3" oninput="logoinp()" min="0" max="2" step="1" type="range" value="0" class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Cost :</p>
+                            <p id="prices4" class="text-[#a271f2] sm:text-[22px] font-semibold">₼ 0</p>
+                        </div>
+                    </div>
+    
+                    <div class="h-fit top-0 sticky  ">
+                        <div class="flex flex-col gap-8 p-8 bg-white">
+                            <p>Təklifiniz</p>
+                            <div class="flex flex-row justify-between gap-8 items-center">
+                                <span class="text-[#8b8b9a]">Statik səhifələr :</span>
+                                <span id="stat" class="text-[#A271F2] font-bold text-lg"> ₼ 700</span>
+                            </div>
+                            <div class="flex flex-row justify-between gap-8 items-center">
+                                <span class="text-[#8b8b9a]">Əlavələr :</span>
+                                <span id="stat1" class="text-[#A271F2] font-bold text-lg">₼ 0</span>
+                            </div>
+                            <div class="flex flex-row justify-between gap-8 items-center">
+                                <span class="text-[#8b8b9a]">SEO : </span>
+                                <span id="stat2" class="text-[#A271F2] font-bold text-lg">₼ 0</span>
+                            </div>
+                            <div class="flex flex-row justify-between gap-8 items-center">
+                                <span class="text-[#8b8b9a]">E-ticarət :</span>
+                                <span id="stat3" class="text-[#A271F2] font-bold text-lg">₼ 0</span>
+                            </div>
+                            <div class="flex flex-row justify-between gap-8 items-center">
+                                <span class="text-[#8b8b9a]">Logo dizaynı :</span>
+                                <span id="stat4" class="text-[#A271F2] font-bold text-lg">₼ 0</span>
+                            </div>
+    
+                            <hr>
+    
+                            <div class="flex flex-row justify-between items-center gap-4 text-[#8b8b9a] text-base text-right">
+                                <span class="font-bold whitespace-nowrap">Qeyd :</span>
+                                <span class="text-base">Minimum sayt qiyməti </span>
+                                <span class="text-mainLightPurple whitespace-nowrap">₼ 450</span>
+                            </div>
+                        </div>
+                        <div class="bg-[#A271F2] text-white text-2xl p-8 flex flex-row justify-between items-center">
+                            <span class="px-1">Ümumi təxmini dəyəri</span>
+                            <span id="totalpr" class="font-semibold whitespace-nowrap"> ₼ 700</span>
+                        </div>
+                        <div>
+                            <button class="bg-[#2bc48a] mt-5 w-full text-white font-bold p-4 rounded-md">Saytınızı İndi
+                                Sifariş Edin</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section>
 
                 <div class="testimonial-container">
@@ -934,6 +1194,9 @@
                     </div>
                 </div>
             </section>
+
+
+            
 
         </main>
 
