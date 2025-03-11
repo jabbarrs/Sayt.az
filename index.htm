@@ -124,7 +124,63 @@
             background: #4a2182;
         }
 
+        #swiper2 {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
+        h2 {
+            color: #300b60;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #4a2182;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .description {
+            color: #4a2182;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+        .swiper {
+            margin-top: 30px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+        }
+
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #300b60;
+        }
+
+
+        .swiper-pagination-bullet {
+            background: #4a2182;
+        }
 
         </style>
     </head>
@@ -846,7 +902,40 @@
                     </div>
                   </div>
               
-              </section>
+            </section>
+
+            <section id="swiper2">
+                <div class="container">
+                    <h2>Videolarımızı Kəşf Edin</h2>
+                    <p class="subtitle">Kəşf Edin, Öyrənin və Uğur Qazanın</p>
+                    <p class="description">
+                        Son nailiyyətlərimizi, media çıxışlarımızı və ətraflı təlimlərimizi izləmək üçün video kolleksiyamıza 
+                        göz atın. İdeal veb saytınızı qurmaqda sizə necə kömək edə biləcəyimizi öyrənin və uğur hekayəmizdən ilham alın.
+                    </p>
+        
+                    <div class="swiper slider2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq3V130Qikc"
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lnpAcQS6Xz4"
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+        
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="bg-purple-50 border-t border-gray-200">
